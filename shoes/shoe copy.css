@@ -1,0 +1,116 @@
+.menu {
+  background: #181A1E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Equal spacing between items */
+  padding: 6px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+/* Style for each link */
+.menu a {
+  color: #B1B0B0;
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'Archivo', 'Courier', 'monospace', 'Courier New';
+}
+
+/* Styling for icons (logo, login, cart) */
+.menu img {
+  width: 50px; /* Adjust as needed for icon size */
+  vertical-align: middle;
+}
+
+/* Hover effect on menu links */
+.menu a:hover {
+  color: #D6E70A;
+}
+
+/* Extra spacing for equal distribution (optional) */
+.menu a:not(:last-child) {
+  margin-right: 20px; /* Adjust as needed to balance layout */
+}
+
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer .social-links img {
+  margin: 0 10px;
+  width: 30px;
+}
+
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 260px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .product .details {
+            padding: 15px;
+            text-align: center;
+        }
+        .product .price-section {
+            margin-top: 10px;
+        }
+        .product .price {
+            color: red;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .product .original-price {
+            text-decoration: line-through;
+            color: #777;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .bookmark-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .product img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 80%;
+          object-fit: cover;
+        }

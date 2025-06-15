@@ -1,0 +1,102 @@
+.menu {
+  background: #181A1E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Style for each link */
+.menu a {
+  color: #B1B0B0;
+  text-decoration: none;
+  font-size: 22px;  /* Adjusted for better responsiveness */
+  font-family: 'Archivo', 'Courier', 'monospace', 'Courier New';
+  padding: 8px 12px;
+}
+
+/* Styling for icons (logo, login, cart) */
+.menu img {
+  width: 40px; /* Adjusted for smaller screens */
+  vertical-align: middle;
+}
+
+/* Hover effect */
+.menu a:hover {
+  color: #D6E70A;
+}
+
+/* Hamburger menu button (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu a {
+      display: none; /* Hide links initially */
+      width: 100%;
+      text-align: left;
+  }
+
+  .menu img {
+      width: 35px;
+  }
+
+  .hamburger {
+      display: block; /* Show hamburger on small screens */
+  }
+
+  .menu.active a {
+      display: block; /* Show menu items when active */
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+  .banner{
+    width:100vw;
+    height:60vh;
+    border: red 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .display{
+    width:100vw;
+    height:60vh;
+    border: rgb(0, 0, 0) 8px solid;
+
+  }
+  .display .templates{
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+height:100%;
+display: grid;
+grid-column-start: 0;
+grid-column-end: 5;
+grid-template-columns: repeat(4,4fr);
+  }
+  .t1 .t2 .t3 .t4 button{
+    width:20%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index:10;
+  }

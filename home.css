@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+.showcase{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    width: 100vw;
+    gap: 10px;
+}
+.collection{
+    display: flex;
+    display:grid;
+    gap: 10px;
+    grid-template-columns: repeat(5,2fr);
+}
+.item img{
+    width:80%;
+}
+.showcase-men{
+    height: 100%;
+}
+.showcase-women{
+    height: 100%;
+}
+.showcase-kids{
+    height: 100%;
+}
+@media (max-width: 768px){
+    .showcase{
+        grid-template-rows: 3fr 3fr 3fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width:100vw;
+    }
+    .hero-image{
+        display: none;
+    }
+    .inv{
+        display: none;
+    }
+    .collection{
+        grid-template-columns: repeat(3,2fr);
+    }
+    .banner{
+
+        display: none;
+    }
+    .item{
+        height: 100%;
+    }
+    .item img{
+        height:100%;
+    }
+}

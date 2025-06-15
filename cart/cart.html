@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Edge</title>
+  <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+  <nav>
+    <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+    <div class="nav-links">
+      <a href="../index.html"> <img src="../logos/edge_logo.svg" width="100"> </a>
+      <a href="../index.html">Home</a>
+      <a href="../men/men.html">Men</a>
+      <a href="../women/women.html">Women</a>
+      <a href="../shoes/shoe.html">Kids</a>
+      <a href="../contact/contact.html">Contact</a>
+      <a href="../saved/saved.html">Saved</a>
+    </div>
+    <div class="search-bar">
+      <form class="search-form" action="/search/search.html" method="GET">
+        <input type="search" name="q" placeholder="Search products..." required aria-label="Search products">
+        <button type="submit"><img src="../logos/search-bar.svg"/></button>
+      </form>
+    </div>
+    <div>
+      <a href="../login/login.html"><img src="../logos/people.svg" width="24"> Login</a>
+      <a href="../checkout.html"><img src="../logos/cart.svg" width="24"></a>
+    </div>
+  </nav>
+
+  <div class="cartempty">
+
+  </div>
+
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="./index.html">
+        <img src="./logos/edge_logo.svg" height="50" width="80"/>
+      </a>
+      <p class="text-body-secondary">© 2025</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Men</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="./men/men.html" class="nav-link p-0 text-body-secondary">T-Shirts</a></li>
+        <li class="nav-item mb-2"><a href="./men/men.html" class="nav-link p-0 text-body-secondary">Formal Shirts</a></li>
+        <li class="nav-item mb-2"><a href="./men/men.html" class="nav-link p-0 text-body-secondary">Jackets</a></li>
+        <li class="nav-item mb-2"><a href="./men/men.html" class="nav-link p-0 text-body-secondary">Jeans</a></li>
+        <li class="nav-item mb-2"><a href="./men/men.html" class="nav-link p-0 text-body-secondary">Trousers</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Women</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="./women/women.html" class="nav-link p-0 text-body-secondary">Kurtas</a></li>
+        <li class="nav-item mb-2"><a href="./women/women.html" class="nav-link p-0 text-body-secondary">Ethnic Wear</a></li>
+        <li class="nav-item mb-2"><a href="./women/women.html" class="nav-link p-0 text-body-secondary">Jeans</a></li>
+        <li class="nav-item mb-2"><a href="./women/women.html" class="nav-link p-0 text-body-secondary">T-Shirts</a></li>
+        <li class="nav-item mb-2"><a href="./women/women.html" class="nav-link p-0 text-body-secondary">Tops</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Kids</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="./shoes/shoe.html" class="nav-link p-0 text-body-secondary">T-Shirts</a></li>
+        <li class="nav-item mb-2"><a href="./shoes/shoe.html" class="nav-link p-0 text-body-secondary">Dresses</a></li>
+        <li class="nav-item mb-2"><a href="./shoes/shoe.html" class="nav-link p-0 text-body-secondary">Tops</a></li>
+        <li class="nav-item mb-2"><a href="./shoes/shoe.html" class="nav-link p-0 text-body-secondary">Ethnic Wear</a></li>
+        <li class="nav-item mb-2"><a href="./shoes/shoe.html" class="nav-link p-0 text-body-secondary">Party wear</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="../config.js"></script>
+  <script src="../searchBar.js"></script>
+  <script src="./cart.js"></script>
+</body>
+</html>

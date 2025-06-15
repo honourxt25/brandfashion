@@ -1,0 +1,306 @@
+/* Make the menu bar stick to the top */
+.menu {
+    background: #181A1E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Equal spacing between items */
+    padding: 6px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other content */
+  }
+  
+  /* Style for each link */
+  .menu a {
+    color: #B1B0B0;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Archivo', 'Courier', 'monospace', 'Courier New';
+  }
+  
+  /* Styling for icons (logo, login, cart) */
+  .menu img {
+    width: 50px; /* Adjust as needed for icon size */
+    vertical-align: middle;
+  }
+  
+  /* Hover effect on menu links */
+  .menu a:hover {
+    color: #D6E70A;
+  }
+  
+  /* Extra spacing for equal distribution (optional) */
+  .menu a:not(:last-child) {
+    margin-right: 20px; /* Adjust as needed to balance layout */
+  }
+  
+  /* Main section styling */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+  }
+  
+  /* Text section styling */
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.2;
+    font-family: 'Nunito';
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    color: #7D7D7D;
+  }
+  
+  .hero-text .sub-heading {
+    font-weight: bold;
+    color: #000;
+    margin-top: 20px;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .primary-button, .secondary-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .primary-button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .secondary-button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+  
+  .promo-text {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  /* Images section styling */
+  .hero-images {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-images {
+      justify-content: center;
+    }
+  }
+  
+  #top-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 22%;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .card img {
+    height: 250px;
+  }
+  
+  #elevate {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #elevate h2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  #elevate p {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  #men-section, #women-section {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .fabric img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    object-fit: cover;
+  }
+  
+  .heading img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  footer {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  footer a {
+    color: #ff6f61;
+    text-decoration: none;
+  }
+  
+  footer .social-links img {
+    margin: 0 10px;
+    width: 30px;
+  }
+  
+  
+  /* Cart styles */
+  
+  .big-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* margin: 0 auto; */
+  }
+  
+  .foot-cart {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+  }
+  
+  /* Bookmark/Saved styles */
+  
+  .bookmark img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    object-fit: cover;
+  }
+  
+  .bookmark p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B1B0B0;
+    font-size: 28px;
+    font-family: 'Archivo', 'Courier', 'monospace', 'Courier New';
+  }
+  
+  /* Men styles */
+  
+  .cloth img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  

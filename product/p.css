@@ -1,0 +1,397 @@
+.menu {
+  background: #181A1E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+
+.menu a {
+  color: #B1B0B0;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Archivo', 'Courier', 'monospace', 'Courier New';
+  padding: 8px 12px;
+}
+
+.menu img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.menu a:hover {
+  color: #D6E70A;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu a {
+      display: none; /* Hide links initially */
+      width: 100%;
+      text-align: left;
+  }
+
+  .menu img {
+      width: 35px;
+  }
+
+  .hamburger {
+      display: block; /* Show hamburger on small screens */
+  }
+
+  .menu.active a {
+      display: block; /* Show menu items when active */
+  }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.big-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* margin: 0 auto; */
+  }
+
+  .foot-cart {
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+  }
+
+  /* Bookmark/Saved styles */
+
+  .bookmark img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .bookmark p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B1B0B0;
+    font-size: 28px;
+    font-family: 'Archivo', 'Courier', 'monospace', 'Courier New';
+  }
+
+
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  .cloth img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    object-fit: cover;
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2c2c2c, #444);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: auto;
+  }
+  nav {
+    background: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #444;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 300px;
+  }
+  .search-bar img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(1);
+  }
+  .search-bar input {
+    border: none;
+    background: none;
+    color: #fff;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 100%;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger{
+      display: block;
+    }
+  }
+.container{
+    display: flex;
+
+}
+.left{
+    width:40vw;
+    margin: 35px;
+
+}
+.left .i{
+    width: 100%;
+    height:80%;
+}
+.left .small{
+  margin: 10px;
+
+    position: relative;
+
+width:10%;
+
+
+}
+.right{
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.right .title{
+  font-size: 60px;
+  position: relative;
+  left:40px;
+}
+.right .description{
+  font-size: 28px;
+  font-style: italic;
+  position: relative;
+ display: flex;
+ justify-content: left;
+ align-items: flex-start;
+
+
+}
+.description span{
+  position: relative;
+  left:40px;
+}
+.right .price{
+  font-size: 40px;
+  position: relative;
+  left:75%;
+
+}
+.size{
+  position: relative;
+  display: flex;
+  margin-top: 40px;
+height:2%;
+  display: grid;
+  gap:20px;
+  grid-template-columns: repeat(6,4fr);
+  justify-content: center;
+  align-items: center;
+  left:20%;
+  width:60%;
+
+  color:rgb(0, 0, 0);
+  font-weight: 800;
+}
+.size .s{
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  border-radius: 100px;
+  align-content: center;
+  height:100%;
+  width:90%;
+  border:2px solid rgb(255, 255, 255);
+}
+.product-d{
+  width:90%;
+  height:30%;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+.product-d h1{
+  position: relative;
+  left:20px;
+
+}
+.product-d p{
+  position: relative;
+  left:20px;
+
+  font-size: 20px;
+}
+.butt{
+  margin-top: 50px;
+  width:100%;
+  height:50px;
+  display: inline-flex;
+  justify-content: right;
+  align-items: center;
+  gap: 15px;
+}
+.btn-buy {
+  display: none;
+}
+
+
+/*
+.butt button{
+  width:25%;
+  position: relative;
+  left:-50px;
+  height:100%;
+  border-radius: 24px;
+  background-color: grey;
+font-weight:600;
+font-size: 20px;
+  color:rgb(153, 10, 10);
+}*/
+@media screen and (max-width: 728px){
+  .container{
+
+    flex-direction:column;
+    width:100%;
+}
+.left{
+  width:80%;
+}
+ .left .i{
+  width: 100%;
+  height:80%;
+}
+.left .small{
+margin:0;
+  position: relative;
+width:10%;
+}
+.left.price{
+  left:70%;
+}
+.right{
+  width:80%;
+  position: relative;
+top:-80px;
+ border:none;
+}
+.right .title{
+  font-size: 30px;
+  top:10px;
+  left:10px;
+}
+.right .description span{
+  position: relative;
+  left:10px;
+}
+.right .price{
+  left:60%;
+}
+.size{
+width:80%;
+gap:9px;
+display: flex;
+justify-content: center;
+}
+.size .s{
+  width:110%;
+}
+.product-d{
+  margin: 25px;
+  width:100%;
+}
+}
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer .social-links img {
+  margin: 0 10px;
+  width: 30px;
+}
+.search-form{
+  display: flex;
+  width: 100%;
+  align-content: center;
+}
+.search-form button{
+  background-color: black;
+  align-self: flex-end;
+  height: 100%;
+  border-radius: 20%;
+  margin-bottom: 5px;
+}
+.search-form button img{
+  margin-left: 8px;
+}

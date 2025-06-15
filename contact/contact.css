@@ -1,0 +1,134 @@
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2c2c2c, #444);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav {
+  background: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #444;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: 300px;
+}
+.search-bar img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: invert(1);
+}
+.search-bar input {
+  border: none;
+  background: none;
+  color: #fff;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 100%;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background: #3a3a3a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 50%;
+  margin: auto;
+}
+.contact-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ff8c00;
+}
+.contact-container p {
+  font-size: 18px;
+  color: #ddd;
+  margin: 5px 0;
+}
+footer {
+  background: #222;
+  padding: 20px;
+  margin-top: 50px;
+}
+.social-links img {
+  width: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+.social-links img:hover {
+  transform: scale(1.1);
+}
+.company-details {
+  font-size: 12px;
+  color: #bbb;
+}
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+  }
+  .nav-links.active {
+      display: flex;
+  }
+  .hamburger{
+    display: block;
+  }
+  nav{
+    align-items: flex-start;
+    gap:10px;
+  }
+  .contact-container{
+    width: 80%;
+    height: 30vh;
+  }
+}
+.creators{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.search-form{
+  display: flex;
+  width: 100%;
+  align-content: center;
+}
+.search-form button{
+  background-color: black;
+  align-self: flex-end;
+  height: 100%;
+  border-radius: 20%;
+  margin-bottom: 5px;
+}
+.search-form button img{
+  margin-left: 8px;
+}

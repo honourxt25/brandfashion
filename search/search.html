@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="./search.css">
+    <style>
+        /* Basic styling for product items (add to search.css or here) */
+        .product-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        .product-item img {
+            max-width: 100px;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+        }
+        .product-item h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-links">
+          <a href="../index.html">
+            <img src="../logos/edge_logo.svg" width="100" />
+          </a>
+          <a href="../index.html">Home</a>
+          <a href="../men/men.html">Men</a>
+          <a href="../women/women.html">Women</a>
+          <a href="../shoes/shoe.html">Kids</a>
+          <a href="../contact/contact.html">Contact</a>
+          <a href="../saved/saved.html">Saved</a>
+        </div>
+        <div class="search-bar">
+          <form class="search-form" action="/search/search.html" method="GET">
+            <input type="search" name="q" placeholder="Search products..." required aria-label="Search products">
+            <button type="submit"><img src="../logos/search-bar.svg"/></button>
+          </form>
+        </div>
+        <div>
+          <a href="../login/login.html"><img src="../logos/people.svg" width="24"> Login</a>
+          <a href="../checkout.html"><img src="../logos/cart.svg" width="24"></a>
+        </div>
+    </nav>
+    <h1>Search Results</h1>
+
+    <div id="results-container">
+        <p>Loading...</p>
+    </div>
+
+    <script src="./searchserver.js"></script>
+</body>
+
+</html>
